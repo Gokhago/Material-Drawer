@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="drawer.css">
+<script src='drawer.js'/>
+  </head>
+<body>
+<div class="header" id="headerq">
+    <div class="rx_icon" id="rx_icon"></div>
+    <div class="titleq" id="title">Title Drawer</div>
+</div>
+<div class="container">
+    <div class="content">
+      <div class="wrapperax">
+  <div class="polyhedron tetrahedron">
+    <div class="containerav">
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+    </div>
+  </div>
+  <div class="polyhedron hexahedron">
+    <div class="containerav">
+      <div class="face square"></div>
+      <div class="face square"></div>
+      <div class="face square"></div>
+      <div class="face square"></div>
+      <div class="face square"></div>
+      <div class="face square"></div>
+    </div>
+  </div>
+  <div class="polyhedron octahedron">
+    <div class="containerav">
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+    </div>
+  </div>
+  <div class="polyhedron dodecahedron">
+    <div class="containerav">
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+      <div class="face pentagon"><span></span></div>
+    </div>
+  </div>
+  <div class="polyhedron icosahedron">
+    <div class="containerav">
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+      <div class="face triangle"></div>
+    </div>
+  </div>
+</div>
+    </div>
+</div>
+<div class="drawer" id="drawer">
+    <div class="content">
+        <div class="header">
+            <div class="avatar"></div>
+            <div class="text">
+                <div class="field name"></div>
+                <div class="field info"></div>
+            </div>
+        </div>
+        <ul class="menu">
+            <li class="item">Menu Item 1</li>
+            <li class="item">Menu Item 2</li>
+            <li class="item">Menu Item 3</li>
+            <li class="item">Menu Item 4</li>
+            <li class="item">Menu Item 5</li>
+            <li class="item subheader">Subheader</li>
+            <li class="item">Menu Item 6</li>
+            <li class="item">Menu Item 7</li>
+            <li class="item">Menu Item 8</li>
+            <li class="item">Menu Item 9</li>
+            <li class="item">Menu Item 10</li>
+            <li class="item">Menu Item 11</li>
+            <li class="item">Menu Item 12</li>
+            <li class="item">Menu Item 13</li>
+            <li class="item">Menu Item 14</li>
+            <li class="item subheader">Subheader</li>
+            <li class="item">Menu Item 15</li>
+            <li class="item">Menu Item 16</li>
+            <li class="item">Menu Item 17</li>
+            <li class="item">Menu Item 18</li>
+            <li class="item">Menu Item 19</li>
+            <li class="item">Menu Item 20</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    //<![CDATA[
+    "use strict";
+  var drawer,
+    drawerElem,
+    iconElem;
+
+    drawerElem = document.getElementById("drawer");
+    iconElem = document.getElementById("rx_icon");
+    drawer = new Drawer(drawerElem);
+    drawer.setDrawerIcon(new DrawerIcon(iconElem));
+    
+    //Use methods
+    /*drawer.onOpenListener(function () {
+        console.log("open");
+    });
+    drawer.onCloseListener(function () {
+        console.log("close");
+    });
+    drawer.onMoveListener(function (x, percent, animation, duration) {
+        console.log(x + " " + percent + " " + animation + " " + duration);
+    });
+    drawer.openDrawer();
+    drawer.closeDrawer();
+    drawer.toggleDrawer();
+    drawer.isOpen();
+    drawer.resetIconOnClick();*/
+}
+    //]]>
+</script>
+</body>
+</html>
