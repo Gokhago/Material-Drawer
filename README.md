@@ -706,7 +706,11 @@ function DrawerIcon(icon) {
     })();
 }
 ```
-
+or using cdn
+```html
+<link rel="stylesheet" href='https://cdn.jsdelivr.net/gh/Gokhago/Material-Drawer@main/drawer.css'>
+<script src='https://cdn.jsdelivr.net/gh/Gokhago/Material-Drawer@main/drawer.js'/>
+```
 ## License
 
 Public domain: [http://unlicense.org](http://unlicense.org)
